@@ -1,0 +1,28 @@
+### GET all questions with answers
+GET http://localhost:3001/api/questions
+###
+
+###
+PATCH http://localhost:3001/api/questions
+Content-Type: application/json
+
+{
+  "questions": [
+    {
+      "_id": "679b4b14e2fa75a6603d5843",
+      "title": "Измененный вопрос 1",
+      "answers": [
+        { "content": "Ответ 1", "is_correct": false },
+        { "content": "Ответ 2", "is_correct": true }
+      ]
+    },
+    {
+      "title": "Новый вопрос 2",
+      "answers": [
+        { "content": "Новый ответ 1", "is_correct": false },
+        { "content": "Новый ответ 2", "is_correct": true }
+      ]
+    }
+  ]
+}
+###
